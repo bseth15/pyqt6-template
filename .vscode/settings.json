@@ -1,14 +1,16 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "files.autoSave": "off",
+    "files.autoSaveDelay": 1000, // ignored if `files.autoSave` is not set to "afterDelay"
     "python.defaultInterpreterPath": "../.venv/Scripts/python",
     "python.linting.lintOnSave": true,
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "flake8",
     "python.linting.flake8Args": [
-        "--config",
-        "tox.ini"
+        "--toml-config",
+        "pyproject.toml"
     ],
     "[python]": {
         "editor.wordBasedSuggestions": false,
@@ -35,5 +37,27 @@
     "qtForPython.uic.options": [
         "-o",
         "${workspaceFolder}${pathSeparator}src${pathSeparator}first_app${pathSeparator}ui${pathSeparator}${resourceBasenameNoExtension}.py"
-    ]
+    ],
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "gitlens.codeLens.scopes": [
+            "document"
+        ],
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+    },
+    "yaml.customTags": [
+        "!py",
+        "context_parser",
+        "steps"
+    ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/yamllint.json": "file:///c%3A/Users/sethb/Documents/Development/pyqt6-tutorials/first-app/tasks/designer.yaml"
+    }
 }

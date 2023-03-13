@@ -1,0 +1,28 @@
+# ./designer.yaml
+context_parser: pypyr.parser.keyvaluepairs
+steps:
+  - name: pypyr.steps.default
+    comment: set default values for variables
+    in:
+      defaults:
+        filename: False
+
+  - name: pypyr.steps.set
+    comment: set variables for use in run/skip later
+    in:
+      set:
+        openFile: !py filename is not False
+
+  - name: pypyr.steps.echo
+    in:
+      echoMe: "Launching Qt Designer"
+
+  - name: pypyr.steps.cmd
+    run: "{openFile}"
+    in:
+      cmd: "qt6-tools designer {filename}"
+
+  - name: pypyr.steps.cmd
+    skip: "{openFile}"
+    in:
+      cmd: "qt6-tools designer"

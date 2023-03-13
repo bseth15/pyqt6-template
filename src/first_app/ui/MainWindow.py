@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\sethb\Documents\Development\pyqt6-tutorials\first-app\src\ui_designer\MainWindow.ui'
+# Form implementation generated from reading ui file 'c:\Users\sethb\Documents\Development\pyqt6-tutorials\first-app\src\designer\MainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -15,9 +15,6 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(490, 420, 75, 24))
-        self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
@@ -33,4 +30,3 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "PushButton"))
