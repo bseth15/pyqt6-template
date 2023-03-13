@@ -36,7 +36,7 @@
     "qtForPython.uic.liveExecution.enabled": true,
     "qtForPython.uic.options": [
         "-o",
-        "${workspaceFolder}${pathSeparator}src${pathSeparator}first_app${pathSeparator}ui${pathSeparator}${resourceBasenameNoExtension}.py"
+        "${resourceDirname}${pathSeparator}..${pathSeparator}first_app${pathSeparator}ui${pathSeparator}${resourceBasenameNoExtension}.py"
     ],
     "[yaml]": {
         "editor.insertSpaces": true,
