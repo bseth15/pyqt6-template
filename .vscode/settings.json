@@ -1,0 +1,39 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "python.defaultInterpreterPath": "../.venv/Scripts/python",
+    "python.linting.lintOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "flake8",
+    "python.linting.flake8Args": [
+        "--config",
+        "tox.ini"
+    ],
+    "[python]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.trimAutoWhitespace": true,
+        "editor.rulers": [
+            {
+                "color": "#00ff88b7",
+                "column": 120
+            }
+        ],
+        "files.trimFinalNewlines": true,
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ]
+    },
+    "qtForPython.qmlls.enabled": false,
+    "qtForPython.rcc.liveExecution.enabled": false,
+    "qtForPython.uic.liveExecution.enabled": true,
+    "qtForPython.uic.options": [
+        "-o",
+        "${workspaceFolder}${pathSeparator}src${pathSeparator}first_app${pathSeparator}ui${pathSeparator}${resourceBasenameNoExtension}.py"
+    ]
+}
