@@ -1,0 +1,17 @@
+[tool.flake8]
+max-line-length = 120
+filename = [
+    '.py',
+    'src/',
+    'tests/',
+]
+extend-exclude = [
+    'src/first_app/ui/*',
+]
+per-file-ignores =[
+    '__init__.py: F401',  # imported but unused
+]
+
+
+[tool.pypyr]
+pipelines_subdir = ".pipelines"
